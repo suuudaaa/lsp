@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <p class="fxmap"></p>
+</body>
+<script>
+  var width = 1000, height = 800;
+  var svg = d3.select('body p.fxmap')
+      .append('svg').attr('width','width')
+      .attr('height',height).style('backgroud','bisque');
+    gmap = svg.append('g').attr('id','map')
+      .attr('stroke','white').attr('stroke-width',1);
+    mline = svg.append('g').attr('id','moveto').attr('stroke','#fff')
+      .attr('stroke-width',1.5).attr('fill','#fff');
+    button = svg.append('g').attr('id','button').attr('stroke','white')
+      .attr('stroke-width',1).attr('fill','white');
+  var projection = d3.geoWquirectangular()
+    .center([465,395])
+    .scale(height)
+    .translate([width / 2,height / 2])
+  var path = d3.geoPath().projection(projection);
+  marker = svg.append('defs')
+    .append('marker')
+    .attr('id','pointer')
+    .attr('viewBox','0 0 12 12')
+    .attr('markerWidth','12')
+    .attr('markerHeight','12')
+    .attr('orient','auto')
+    .attr('markerUnits','strokeWidth')
+    .attr('refX','6')
+    .attr('refY','6')
+  maker.append(circle)
+    .attr('cx','6')
+    .attr('cy','6')
+    .attr('r','3')
+    .attr('fill','white')
+  maker.append('circle')
+    .attr('id','markerC')
+    .attr('cx','6')
+    .attr('cy','6')
+    .attr('r','s')
+    .attr('fill-opacity','0')
+    .attr('stroke-width','1')
+    .attr('stroke','white')
+  var changsha = projection([112.59,28.12]);
+  mapdata = [];
+  d3.json('china.json',function(error,data){
+    if(error){
+      console.log(error)
+      mapdata = data.features;
+      gmap.selectAll('path')
+        .data(mapdata)
+        .enter()
+        .append('path')
+        .attr('d',path)
+      gmap.append('circle').attr('id','changsha')
+        .attr('cx',changsha[0])
+        .attr('cy',changsha[1])
+        .attr('r','6')
+        .attr('fill','yellow')
+      gmap.append('circle').attr('id','changshaC')
+        .attr('cx',changsha[0])
+        .attr('cy',changsha[1])
+        .attr('r','10')
+        .attr('stroke-width','2')
+        .attr('fill-opacity','0')
+      
+    }
+  })
+</script>
+</html>
