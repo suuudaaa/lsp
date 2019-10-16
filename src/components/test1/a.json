@@ -1,0 +1,15 @@
+function downLoadType(fileName) {
+    var url = fileName;
+    var type = "icon_file";
+    if (url.isIgnoreCaseContain(".docx") || url.isIgnoreCaseContain(".doc")) {
+        type += "01";
+    } else if (url.isIgnoreCaseContain(".xlsx") || url.isIgnoreCaseContain(".xls")) {
+        type += "02";
+    } else if (url.isIgnoreCaseContain(".pdf")) {
+        type += "03";
+    } else if (url.isIgnoreCaseContain(".png") || url.isIgnoreCaseContain(".jpg")
+            || url.isIgnoreCaseContain(".jpeg") || url.isIgnoreCaseContain(".bmp") || url.isIgnoreCaseContain(".gif")) {
+        type += "04";
+    }
+    return type;
+}

@@ -1,0 +1,103 @@
+{
+  "id": "ca9d5668-def4-488c-88e2-f7c98bfa94c6",
+  "name": "XXXXX有限公司-u1",
+  "subRole": [
+      {
+          "id": "1e3e8b8f-544a-4ee4-b3a9-8624f505a307",
+          "deleted": false,
+          "version": 2,
+          "createBy": "yuyb@lordstar.net",
+          "createByName": "于泳波",
+          "createTime": 1559197935000,
+          "updateBy": "yuyb@lordstar.net",
+          "updateByName": "于泳波",
+          "updateTime": 1571030263000,
+          "history": null,
+          "code": null,
+          "changeBeforeId": null,
+          "status": null,
+          "statusName": null,
+          "historyName": null,
+          "comId": "ca9d5668-def4-488c-88e2-f7c98bfa94c6",
+          "name": "销售一部-u1",
+          "comName": "XXXXX有限公司",
+          "roleType": 1,
+          "parentRoleId": null,
+          "parentRoleName": null,
+          "edit": false,
+          "subRole": null,
+          "customerInfo": null,
+          "menuInfo": [
+              {
+                  "id": "Report看板",
+                  "name": ""
+              },
+              {
+                  "id": "Business看板",
+                  "name": ""
+              }
+          ],
+          "dataInfo": null,
+          "goodsBrandInfo": [
+              {
+                  "id": "Everanalog",
+                  "name": ""
+              },
+              {
+                  "id": "FASTRON",
+                  "name": ""
+              }
+          ],
+          "shipperInfo": [
+              {
+                  "id": "慈溪市华晟灯具有限公司",
+                  "name": ""
+              },
+              {
+                  "id": "江苏梁丰照明有限公司",
+                  "name": ""
+              },
+              {
+                  "id": "上海正久电子科技有限公司",
+                  "name": ""
+              }
+          ]
+      },
+      {
+          "name": "create12",
+          "goodsBrandInfo": [
+              {
+                  "id": "Everanalog",
+                  "name": ""
+              },
+              {
+                  "id": "FASTRON",
+                  "name": ""
+              },
+              {
+                  "id": "AARONIA",
+                  "name": ""
+              },
+              {
+                  "id": "OMNIVISION",
+                  "name": ""
+              }
+          ],
+          "shipperInfo": [
+              {
+                  "id": "慈溪市华晟灯具有限公司",
+                  "name": ""
+              },
+              {
+                  "id": "江苏梁丰照明有限公司",
+                  "name": ""
+              },
+              {
+                  "id": "上海正久电子科技有限公司",
+                  "name": ""
+              }
+          ],
+          "menuInfo": []
+      }
+  ]
+}

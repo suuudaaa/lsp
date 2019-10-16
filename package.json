@@ -12,9 +12,12 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "element-ui": "^2.12.0",
     "less-loader": "^5.0.0",
+    "node-sass": "^4.12.0",
     "prerender-spa-plugin": "^3.4.0",
-    "sass-loader": "^7.1.0",
+    "sass": "^1.23.0",
+    "sass-loader": "^7.3.1",
     "style-loader": "^0.23.1",
     "vue": "^2.5.2",
     "vue-meta-info": "^0.1.7",
@@ -55,6 +58,7 @@
     "shelljs": "^0.7.6",
     "uglifyjs-webpack-plugin": "^1.1.1",
     "url-loader": "^0.5.8",
+    "vue-happy-scroll": "^2.1.0",
     "vue-jest": "^1.0.2",
     "vue-loader": "^13.3.0",
     "vue-style-loader": "^3.0.1",

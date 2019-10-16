@@ -71,5 +71,24 @@ export default {
   .popup li:last-child{
     border-left: none;
   }
+.change-version {
+    font-family: PingFang SC;
+    position: absolute;
+    right: 0;
+    top: 30px;
+    height: 28px;
+    line-height: 28px;
+    background: #12bd7d;
+    border-radius: 14px 0px 0px 14px;
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 4px #1bd38e;
+    padding: 0 12px;
+    z-index: 2;
+  }
+
+  .change-version img {
+    margin-top: -3px;
+    vertical-align: middle;
+  }
 </style>
 
